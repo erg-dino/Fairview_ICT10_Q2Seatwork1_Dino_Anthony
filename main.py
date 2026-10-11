@@ -7,9 +7,9 @@ def check_candidate(e):
     document.getElementById("output1").innerHTML = ""
     
     # combine first and last name
-    first_name = document.getElementById("input1").value.strip()
-    last_name = document.getElementById("input2").value.strip()
-    full_name = f"{first_name} {last_name}"
+    first_name = document.getElementById("input1").value()
+    last_name = document.getElementById("input2").value()
+    full_name = f"{first_name} + {last_name}"
     
     # check if name is in the list of members that got in
     is_member = full_name in club_members
